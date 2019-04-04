@@ -16,6 +16,7 @@ pipeline {
     }
 }
 
+// attach the branch as checkout makes a detached checkout
 def attachBranch() {
     def branchName = env.BRANCH_NAME.trim()
     if (branchName in ['master', 'develop']) {
