@@ -8,6 +8,11 @@ pipeline {
                 attachBranch()
             }
         }
+        stage('Attach branch') {
+            steps {
+                attachBranch()
+            }
+        }
     }
 }
 
